@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Us</title>
+    <link rel="stylesheet" href="rating.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+    <nav class="box">
+        <ul>
+            <li><a href="restro.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="">Rating</a></li>
+         </ul>
+ </nav>
+ <form id="form">
+    <input type="text" id="Name" placeholder="Username" required><br>
+    <input type="menu1" id="menu1" placeholder="menu1" required><br>
+    <input type="menu2" id="menu2" placeholder="menu2" required><br>
+    <input type="menu3" id="menu3" placeholder="menu3" required><br>
+    <input type="submit" value="order now">
+</form>
+    <div class="rating">
+            <input type="radio" id="star1"><label for="star1"></label>
+            <input type="radio" id="star2">
+            <label for="star2"></label>
+            <input type="radio" id="star3">
+            <label for="star3"></label>
+            <input type="radio" id="star4">
+            <label for="star4"></label>
+            <input type="radio" id="star5">
+            <label for="star5"></label>
+    </div>
+</body>
+<script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('order',function(event){
+        event.preventDefault()
+
+        var username = document.getElementById('username').Value
+        
+        console.log(username)
+
+        var menu1 = document.getElementById('menu1').value
+        
+        console.log(menu1)
+
+        var menu2 = document.getElementById('menu2').value
+        
+        console.log(menu2)
+
+        var menu3 = document.getElementById('menu3').value
+        
+        console.log(menu3)
+    })
+ </script>
+</html>

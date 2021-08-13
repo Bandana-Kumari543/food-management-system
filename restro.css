@@ -1,0 +1,29 @@
+.box{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 50px;
+    position: sticky;
+    border:1px solid black;
+    background-color: teal;
+}
+ .box ul{
+    display: flex;
+    list-style: none;
+ }  
+.box ul li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+ } 
+.box ul li a{ 
+     text-decoration: none;
+    color: darkgray;
+    padding: 8px 25px;
+    transition: .8s; 
+}
+.box ul li a:hover{
+    background-color: tomato;
+    color: black;
+    box-shadow: 0 0 10px black;
+}
